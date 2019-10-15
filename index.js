@@ -8,6 +8,24 @@ let takeANumber = (katzDeliLine, name) => {
 }
 
 
+
+
+//deli gives number
+//return welcome you have ticket #1
+
+let ticketNumber = 0;
+let takeTicketNumber = (katzDeliLine) => {
+  
+  ticketNumber += 1;
+  katzDeliLine.push(ticketNumber)
+  return `Welcome, you have ${ticketNumber}`; 
+  
+}
+
+
+
+
+
 //serving current customer and removing them from the line when done
 let nowServing = (katzDeliLine) => {
   let currentPerson = 0;
@@ -44,6 +62,8 @@ let currentLine = (katzDeliLine) => {
   
   return "The line is currently: " + line.join().trim();
 }
+
+
 
 
 
